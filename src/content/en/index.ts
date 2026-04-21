@@ -2,13 +2,13 @@ import type { PortfolioContent } from "../types";
 
 const content: PortfolioContent = {
   nav: [
-    { label: "About", href: "#sobre" },
-    { label: "Skills", href: "#habilidades" },
-    { label: "Projects", href: "#projetos" },
-    { label: "Architecture", href: "#arquitetura" },
-    { label: "Education", href: "#formacao" },
-    { label: "Experience", href: "#experiencia" },
-    { label: "Contact", href: "#contato" },
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Architecture", href: "#architecture" },
+    { label: "Education", href: "#education" },
+    { label: "Experience", href: "#experience" },
+    { label: "Contact", href: "#contact" },
   ],
 
   hero: {
