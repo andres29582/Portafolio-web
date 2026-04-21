@@ -1,0 +1,37 @@
+{
+  "name": "portafolio-web",
+  "version": "1.0.0",
+  "description": "Portfólio web profissional com Next.js, TypeScript e Tailwind CSS, focado em apresentação técnica, projetos e evolução profissional em desenvolvimento e TI.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres29582/Portafolio-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andres29582/Portafolio-web/issues"
+  },
+  "homepage": "https://github.com/andres29582/Portafolio-web#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.4",
+    "next": "^16.2.4",
+    "postcss": "^8.5.10",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3"
+  }
+}
