@@ -35,7 +35,7 @@ const categoryDisplayNames: Record<string, string> = {
 
 export function SkillsSection({ content }: SkillsSectionProps) {
   return (
-    <section id="habilidades" className="py-24 px-6 bg-gray-900/50">
+    <section id="skills" className="py-24 px-6 bg-gray-900/50">
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 

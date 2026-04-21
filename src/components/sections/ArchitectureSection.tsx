@@ -8,7 +8,7 @@ interface ArchitectureSectionProps {
 
 export function ArchitectureSection({ content }: ArchitectureSectionProps) {
   return (
-    <section id="arquitetura" className="py-24 px-6 bg-gray-900/50">
+    <section id="architecture" className="py-24 px-6 bg-gray-900/50">
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 

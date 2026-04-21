@@ -8,7 +8,7 @@ interface ExperienceSectionProps {
 
 export function ExperienceSection({ content }: ExperienceSectionProps) {
   return (
-    <section id="experiencia" className="py-24 px-6 bg-gray-900/50">
+    <section id="experience" className="py-24 px-6 bg-gray-900/50">
       <div className="max-w-3xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 

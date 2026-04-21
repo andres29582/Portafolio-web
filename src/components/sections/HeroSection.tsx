@@ -40,13 +40,13 @@ export function HeroSection({ content }: HeroSectionProps) {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#projetos"
+            href="#projects"
             className="inline-flex items-center justify-center px-8 py-3.5 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-500/25"
           >
             {content.ctaProjects}
           </a>
           <a
-            href="#contato"
+            href="#contact"
             className="inline-flex items-center justify-center px-8 py-3.5 border border-gray-600 hover:border-cyan-500 text-gray-300 hover:text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5"
           >
             {content.ctaContact}

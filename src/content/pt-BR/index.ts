@@ -2,13 +2,13 @@ import type { PortfolioContent } from "../types";
 
 const content: PortfolioContent = {
   nav: [
-    { label: "Sobre", href: "#sobre" },
-    { label: "Habilidades", href: "#habilidades" },
-    { label: "Projetos", href: "#projetos" },
-    { label: "Arquitetura", href: "#arquitetura" },
-    { label: "Formação", href: "#formacao" },
-    { label: "Experiência", href: "#experiencia" },
-    { label: "Contato", href: "#contato" },
+    { label: "Sobre", href: "#about" },
+    { label: "Habilidades", href: "#skills" },
+    { label: "Projetos", href: "#projects" },
+    { label: "Arquitetura", href: "#architecture" },
+    { label: "Formação", href: "#education" },
+    { label: "Experiência", href: "#experience" },
+    { label: "Contato", href: "#contact" },
   ],
 
   hero: {
@@ -209,6 +209,7 @@ const content: PortfolioContent = {
 
   education: {
     sectionTitle: "Formação",
+    currentLabel: "Em andamento",
     items: [
       {
         institution: "Universidade Anhanguera",

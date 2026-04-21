@@ -79,6 +79,7 @@ export interface EducationItem {
 
 export interface EducationContent {
   sectionTitle: string;
+  currentLabel: string;
   items: EducationItem[];
 }
 

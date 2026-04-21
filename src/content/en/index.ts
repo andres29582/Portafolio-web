@@ -209,6 +209,7 @@ const content: PortfolioContent = {
 
   education: {
     sectionTitle: "Education",
+    currentLabel: "In progress",
     items: [
       {
         institution: "Universidade Anhanguera",

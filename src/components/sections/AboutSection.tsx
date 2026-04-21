@@ -7,7 +7,7 @@ interface AboutSectionProps {
 
 export function AboutSection({ content }: AboutSectionProps) {
   return (
-    <section id="sobre" className="py-24 px-6">
+    <section id="about" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 

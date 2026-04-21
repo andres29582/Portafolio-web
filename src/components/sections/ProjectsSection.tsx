@@ -25,7 +25,7 @@ function StatusBadge({
 
 export function ProjectsSection({ content }: ProjectsSectionProps) {
   return (
-    <section id="projetos" className="py-24 px-6">
+    <section id="projects" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 

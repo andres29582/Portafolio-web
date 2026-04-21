@@ -7,7 +7,7 @@ interface EducationSectionProps {
 
 export function EducationSection({ content }: EducationSectionProps) {
   return (
-    <section id="formacao" className="py-24 px-6">
+    <section id="education" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <SectionTitle title={content.sectionTitle} />
 
@@ -46,7 +46,7 @@ export function EducationSection({ content }: EducationSectionProps) {
                     <div className="text-right">
                       <span className="text-gray-400 text-sm">{item.period}</span>
                       {item.current && (
-                        <p className="text-cyan-400 text-xs mt-1">● Em andamento</p>
+                        <p className="text-cyan-400 text-xs mt-1">● {content.currentLabel}</p>
                       )}
                     </div>
                   </div>
