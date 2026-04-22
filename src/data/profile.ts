@@ -66,7 +66,7 @@ export const profile = {
     },
     links: [
       { label: "LinkedIn", href: undefined },
-      { label: "GitHub", href: undefined },
+      { label: "GitHub", href: "https://github.com/andres29582" },
     ] satisfies ProfileLink[],
   },
   education: [
