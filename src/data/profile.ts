@@ -65,7 +65,7 @@ export const profile = {
       en: "Available for on-site, hybrid, remote, and international opportunities",
     },
     links: [
-      { label: "LinkedIn", href: undefined },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/andres-pignoloni-857462312" },
       { label: "GitHub", href: "https://github.com/andres29582" },
     ] satisfies ProfileLink[],
   },
