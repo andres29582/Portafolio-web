@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
-import { cvDownloadLabels, type TranslationContent } from "@/data/translations";
+import type { TranslationContent } from "@/data/translations";
 import type { Language } from "@/lib/i18n";
 
 type HeroSectionProps = {
@@ -27,7 +27,11 @@ export function HeroSection({ language, labels }: HeroSectionProps) {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Button href="#projects">{labels.actions.viewProjects}</Button>
-          <Button href="#" title={cvDownloadLabels[language]} variant="secondary">
+          <Button
+            download="cv-andres-pignoloni.docx"
+            href="/cv-andres-pignoloni.docx"
+            variant="secondary"
+          >
             {labels.actions.downloadCv}
           </Button>
           <Button href="#contact" variant="ghost">
