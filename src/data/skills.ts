@@ -67,4 +67,22 @@ export const skills: SkillGroup[] = [
       { name: "Expo", level: "learning" },
     ],
   },
+  {
+    id: "methodologies-and-processes",
+    title: {
+      es: "Metodologias y procesos",
+      pt: "Metodologias e processos",
+      en: "Methodologies and processes",
+    },
+    description: {
+      es: "Conocimiento de formas de trabajo para organizar entregas, prioridades y acompanamiento de proyectos.",
+      pt: "Conhecimento de formas de trabalho para organizar entregas, prioridades e acompanhamento de projetos.",
+      en: "Knowledge of work methods to organize delivery, priorities, and project follow-through.",
+    },
+    items: [
+      { name: "Metodologias ageis", level: "learning" },
+      { name: "Scrum", level: "learning" },
+      { name: "Kanban", level: "learning" },
+    ],
+  },
 ];
