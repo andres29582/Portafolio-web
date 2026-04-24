@@ -44,7 +44,7 @@ export function PortfolioHome() {
         <AboutSection language={language} labels={labels} />
         <SkillsSection language={language} labels={labels} />
         <ProjectsSection language={language} labels={labels} />
-        <ArchitectureSection labels={labels} />
+        <ArchitectureSection language={language} labels={labels} />
         <EducationSection language={language} labels={labels} />
         <ExperienceSection language={language} labels={labels} />
         <ContactSection language={language} labels={labels} />
