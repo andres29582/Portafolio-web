@@ -9,14 +9,14 @@ export const projects: Project[] = [
       en: "Personal Management System",
     },
     description: {
-      es: "Sistema orientado a la gestión financiera personal, con foco en organización de cuentas, ingresos, gastos, categorías, transferencias, deudas y metas.",
-      pt: "Sistema voltado à gestão financeira pessoal, com foco em organização de contas, receitas, despesas, categorias, transferências, dívidas e metas.",
-      en: "System focused on personal financial management, organizing accounts, income, expenses, categories, transfers, debts, and goals.",
+      es: "Aplicación full stack de gestión financiera personal con backend modular, API REST, autenticación JWT, PostgreSQL y frontend mobile en React Native/Expo.",
+      pt: "Aplicação full stack de gestão financeira pessoal com backend modular, API REST, autenticação JWT, PostgreSQL e frontend mobile em React Native/Expo.",
+      en: "Full-stack personal finance management application with modular backend, REST API, JWT authentication, PostgreSQL, and mobile frontend in React Native/Expo.",
     },
     problem: {
-      es: "Transformar registros financieros dispersos en una estructura organizada, con reglas de negocio, control de datos y una visión más clara de la vida financiera.",
-      pt: "Transformar registros financeiros dispersos em uma estrutura organizada, com regras de negócio, controle de dados e visão mais clara da vida financeira.",
-      en: "Turns scattered financial records into an organized structure with business rules, data control, and a clearer view of personal finances.",
+      es: "Centralizar cuentas, ingresos, gastos, categorías, transferencias, deudas y metas en una estructura con reglas de negocio, control de datos y base para reportes.",
+      pt: "Centralizar contas, receitas, despesas, categorias, transferências, dívidas e metas em uma estrutura com regras de negócio, controle de dados e base para relatórios.",
+      en: "Centralizes accounts, income, expenses, categories, transfers, debts, and goals in a structure with business rules, data control, and a foundation for reports.",
     },
     technologies: [
       "NestJS",
@@ -29,9 +29,9 @@ export const projects: Project[] = [
       "Expo",
     ],
     learnings: {
-      es: "Modelado de entidades, autenticación, organización por módulos, backend, bases de datos, reglas de negocio y visión arquitectural del sistema.",
-      pt: "Modelagem de entidades, autenticação, organização por módulos, backend, banco de dados, regras de negócio e visão arquitetural do sistema.",
-      en: "Entity modeling, authentication, module organization, backend, databases, business rules, and architectural system thinking.",
+      es: "Implementación de módulos, entidades, DTOs, autenticación, persistencia, relaciones en base de datos y separación de responsabilidades en el backend.",
+      pt: "Implementação de módulos, entidades, DTOs, autenticação, persistência, relações em banco de dados e separação de responsabilidades no backend.",
+      en: "Implemented modules, entities, DTOs, authentication, persistence, database relationships, and separation of backend responsibilities.",
     },
     status: "in-progress",
     statusLabel: {
@@ -49,20 +49,20 @@ export const projects: Project[] = [
       en: "Web Portfolio",
     },
     description: {
-      es: "Aplicación web desarrollada para presentar mi perfil profesional, proyectos, habilidades y forma de pensar sistemas.",
-      pt: "Aplicação web desenvolvida para apresentar meu perfil profissional, projetos, habilidades e forma de pensar sistemas.",
-      en: "Web application built to present my professional profile, projects, skills, and way of thinking about systems.",
+      es: "Aplicación web multilingüe creada con Next.js, TypeScript y Tailwind CSS para presentar perfil, proyectos, habilidades y contacto profesional.",
+      pt: "Aplicação web multilíngue criada com Next.js, TypeScript e Tailwind CSS para apresentar perfil, projetos, habilidades e contato profissional.",
+      en: "Multilingual web application built with Next.js, TypeScript, and Tailwind CSS to present my profile, projects, skills, and professional contact.",
     },
     problem: {
-      es: "Crear una presentación más estructurada que un currículum tradicional, mostrando no solo información personal, sino también organización técnica y evolución profesional.",
-      pt: "Criar uma apresentação mais estruturada do que um currículo tradicional, mostrando não apenas informações pessoais, mas também organização técnica e evolução profissional.",
-      en: "Creates a more structured presentation than a traditional resume, showing not only personal information but also technical organization and professional growth.",
+      es: "Convertir el CV tradicional en una experiencia pública, navegable y clara, con foco en reclutadores que necesitan entender rápido el encaje técnico.",
+      pt: "Converter o currículo tradicional em uma experiência pública, navegável e clara, com foco em recrutadores que precisam entender rapidamente o encaixe técnico.",
+      en: "Turns a traditional resume into a public, navigable, and clear experience for recruiters who need to quickly understand technical fit.",
     },
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     learnings: {
-      es: "Estructuración de frontend, organización modular, contenido técnico, presentación profesional e internacionalización de la interfaz.",
-      pt: "Estruturação de frontend, organização modular, conteúdo técnico, apresentação profissional e internacionalização da interface.",
-      en: "Frontend structure, modular organization, technical content, professional presentation, and interface internationalization.",
+      es: "Componentización, datos tipados, contenido localizado en tres idiomas, responsive design, despliegue en Vercel y cuidado de presentación profesional.",
+      pt: "Componentização, dados tipados, conteúdo localizado em três idiomas, design responsivo, deploy na Vercel e cuidado com apresentação profissional.",
+      en: "Componentization, typed data, localized content in three languages, responsive design, Vercel deployment, and professional presentation polish.",
     },
     status: "in-progress",
     statusLabel: {

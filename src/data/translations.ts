@@ -86,30 +86,30 @@ export const translations: Record<Language, TranslationContent> = {
       sendMessage: "Enviar mensaje",
     },
     hero: {
-      eyebrow: "Portafolio técnico profesional",
+      eyebrow: "Perfil técnico para oportunidades junior",
       availability: "Disponible para oportunidades presenciales, híbridas, remotas e internacionales",
       systemTitle: "Sistema de presentación",
-      systemSubtitle: "Perfil organizado como arquitectura de producto.",
+      systemSubtitle: "Backend, datos y soporte conectados en proyectos.",
       systemModules: ["Perfil", "Habilidades", "Proyectos", "Arquitectura", "Contacto"],
     },
     sections: {
       about: {
         eyebrow: "Quién soy",
-        title: "Transición hacia tecnología con base técnica",
+        title: "Backend junior con base técnica y experiencia corporativa",
         description:
-          "Mi perfil conecta formación en ADS, proyectos prácticos y una visión estructurada para construir sistemas útiles.",
+          "Mi perfil conecta formación en ADS, proyectos con backend y bases de datos, y experiencia real en soporte operacional.",
       },
       skills: {
         eyebrow: "Stack y fundamentos",
-        title: "Habilidades técnicas en aprendizaje",
+        title: "Habilidades técnicas aplicadas en proyectos",
         description:
-          "Organizo mis conocimientos por bloques para mostrar una evolución honesta: fundamentos, desarrollo, estructura, datos y herramientas.",
+          "Organizo mis conocimientos por bloques para mostrar qué ya apliqué, qué practico y qué sigo fortaleciendo.",
       },
       projects: {
         eyebrow: "Evidencia práctica",
-        title: "Proyectos con objetivo, tecnología y aprendizaje",
+        title: "Proyectos con backend, datos y entrega visible",
         description:
-          "Cada proyecto muestra el problema trabajado, las decisiones técnicas y lo que aprendí durante la implementación.",
+          "Cada proyecto muestra el problema trabajado, las decisiones técnicas y lo que implementé durante la construcción.",
       },
       architecture: {
         eyebrow: "Pensamiento técnico",
@@ -125,9 +125,9 @@ export const translations: Record<Language, TranslationContent> = {
       },
       experience: {
         eyebrow: "Experiencia",
-        title: "Vivencia corporativa y soporte operacional",
+        title: "Soporte operacional en ambiente corporativo",
         description:
-          "La experiencia profesional aporta criterio para entender procesos, atención, organización de información y problemas reales.",
+          "La experiencia profesional aporta criterio para entender usuarios, procesos, información y problemas reales antes de construir soluciones.",
       },
       contact: {
         eyebrow: "Contacto",
@@ -160,7 +160,7 @@ export const translations: Record<Language, TranslationContent> = {
     labels: {
       technologies: "Tecnologías",
       problem: "Objetivo",
-      learned: "Aprendizaje",
+      learned: "Implementado",
       status: "Estado",
       location: "Localización",
       availability: "Disponibilidad",
@@ -168,7 +168,7 @@ export const translations: Record<Language, TranslationContent> = {
       pendingLink: "Link pendiente",
     },
     skillLevels: {
-      learning: "En aprendizaje",
+      learning: "Fortaleciendo",
       practicing: "Practicando",
       applied: "Aplicado",
     },
@@ -194,30 +194,30 @@ export const translations: Record<Language, TranslationContent> = {
       sendMessage: "Enviar mensagem",
     },
     hero: {
-      eyebrow: "Portfólio técnico profissional",
+      eyebrow: "Perfil técnico para oportunidades junior",
       availability: "Disponível para oportunidades presenciais, híbridas, remotas e internacionais",
       systemTitle: "Sistema de apresentação",
-      systemSubtitle: "Perfil organizado como arquitetura de produto.",
+      systemSubtitle: "Backend, dados e suporte conectados em projetos.",
       systemModules: ["Perfil", "Habilidades", "Projetos", "Arquitetura", "Contato"],
     },
     sections: {
       about: {
         eyebrow: "Quem sou",
-        title: "Transição para tecnologia com base técnica",
+        title: "Backend junior com base técnica e experiência corporativa",
         description:
-          "Meu perfil conecta formação em ADS, projetos práticos e uma visão estruturada para construir sistemas úteis.",
+          "Meu perfil conecta formação em ADS, projetos com backend e banco de dados, e experiência real em suporte operacional.",
       },
       skills: {
         eyebrow: "Stack e fundamentos",
-        title: "Habilidades técnicas em aprendizado",
+        title: "Habilidades técnicas aplicadas em projetos",
         description:
-          "Organizo meus conhecimentos por blocos para mostrar uma evolução honesta: fundamentos, desenvolvimento, estrutura, dados e ferramentas.",
+          "Organizo meus conhecimentos por blocos para mostrar o que já apliquei, o que pratico e o que sigo fortalecendo.",
       },
       projects: {
         eyebrow: "Evidência prática",
-        title: "Projetos com objetivo, tecnologia e aprendizado",
+        title: "Projetos com backend, dados e entrega visível",
         description:
-          "Cada projeto mostra o problema trabalhado, as decisões técnicas e o aprendizado construído durante a implementação.",
+          "Cada projeto mostra o problema trabalhado, as decisões técnicas e o que implementei durante a construção.",
       },
       architecture: {
         eyebrow: "Pensamento técnico",
@@ -233,9 +233,9 @@ export const translations: Record<Language, TranslationContent> = {
       },
       experience: {
         eyebrow: "Experiência",
-        title: "Vivência corporativa e suporte operacional",
+        title: "Suporte operacional em ambiente corporativo",
         description:
-          "A experiência profissional traz critério para entender processos, atendimento, organização de informações e problemas reais.",
+          "A experiência profissional traz critério para entender usuários, processos, informações e problemas reais antes de construir soluções.",
       },
       contact: {
         eyebrow: "Contato",
@@ -268,7 +268,7 @@ export const translations: Record<Language, TranslationContent> = {
     labels: {
       technologies: "Tecnologias",
       problem: "Objetivo",
-      learned: "Aprendizados",
+      learned: "Implementado",
       status: "Estado",
       location: "Localização",
       availability: "Disponibilidade",
@@ -276,7 +276,7 @@ export const translations: Record<Language, TranslationContent> = {
       pendingLink: "Link pendente",
     },
     skillLevels: {
-      learning: "Em aprendizado",
+      learning: "Fortalecendo",
       practicing: "Praticando",
       applied: "Aplicado",
     },
@@ -302,30 +302,30 @@ export const translations: Record<Language, TranslationContent> = {
       sendMessage: "Send message",
     },
     hero: {
-      eyebrow: "Professional technical portfolio",
+      eyebrow: "Technical profile for junior opportunities",
       availability: "Available for on-site, hybrid, remote, and international opportunities",
       systemTitle: "Presentation system",
-      systemSubtitle: "Profile organized as product architecture.",
+      systemSubtitle: "Backend, data, and support connected through projects.",
       systemModules: ["Profile", "Skills", "Projects", "Architecture", "Contact"],
     },
     sections: {
       about: {
         eyebrow: "Who I am",
-        title: "Transitioning into technology with technical foundations",
+        title: "Junior backend profile with technical foundations and corporate experience",
         description:
-          "My profile connects ADS education, practical projects, and a structured mindset for building useful systems.",
+          "My profile connects ADS education, backend and database projects, and real experience in operational support.",
       },
       skills: {
         eyebrow: "Stack and fundamentals",
-        title: "Technical skills in learning",
+        title: "Technical skills applied in projects",
         description:
-          "I organize my knowledge by blocks to show honest progress: fundamentals, development, structure, data, and tools.",
+          "I organize my knowledge by blocks to show what I have applied, what I practice, and what I keep strengthening.",
       },
       projects: {
         eyebrow: "Practical evidence",
-        title: "Projects with objective, technology, and learning",
+        title: "Projects with backend, data, and visible delivery",
         description:
-          "Each project shows the problem worked on, technical decisions, and learning built during implementation.",
+          "Each project shows the problem worked on, technical decisions, and what I implemented during the build.",
       },
       architecture: {
         eyebrow: "Technical thinking",
@@ -341,9 +341,9 @@ export const translations: Record<Language, TranslationContent> = {
       },
       experience: {
         eyebrow: "Experience",
-        title: "Corporate background and operational support",
+        title: "Operational support in a corporate environment",
         description:
-          "Professional experience builds judgment for understanding processes, service, information organization, and real problems.",
+          "Professional experience builds judgment for understanding users, processes, information, and real problems before building solutions.",
       },
       contact: {
         eyebrow: "Contact",
@@ -376,7 +376,7 @@ export const translations: Record<Language, TranslationContent> = {
     labels: {
       technologies: "Technologies",
       problem: "Objective",
-      learned: "Learning",
+      learned: "Implemented",
       status: "Status",
       location: "Location",
       availability: "Availability",
@@ -384,7 +384,7 @@ export const translations: Record<Language, TranslationContent> = {
       pendingLink: "Pending link",
     },
     skillLevels: {
-      learning: "Learning",
+      learning: "Strengthening",
       practicing: "Practicing",
       applied: "Applied",
     },
@@ -393,7 +393,7 @@ export const translations: Record<Language, TranslationContent> = {
 };
 
 export const cvDownloadLabels: LocalizedText = {
-  es: "CV disponible próximamente",
-  pt: "CV disponível em breve",
-  en: "CV available soon",
+  es: "Descargar CV",
+  pt: "Baixar CV",
+  en: "Download CV",
 };
