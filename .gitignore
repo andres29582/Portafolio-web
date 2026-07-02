@@ -8,6 +8,8 @@ out
 
 dev-server.log
 dev-server.err.log
+tsconfig.tsbuildinfo
+.docx-render/
 
 npm-debug.log*
 yarn-debug.log*
