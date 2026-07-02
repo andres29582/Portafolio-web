@@ -30,6 +30,7 @@ export type TranslationContent = {
     viewGithub: string;
     viewLive: string;
     sendMessage: string;
+    viewDetails: string;
   };
   hero: {
     eyebrow: string;
@@ -84,76 +85,77 @@ export const translations: Record<Language, TranslationContent> = {
       viewGithub: "GitHub",
       viewLive: "Demo",
       sendMessage: "Enviar mensaje",
+      viewDetails: "Ver detalles",
     },
     hero: {
-      eyebrow: "Perfil técnico para oportunidades junior",
-      availability: "Disponible para oportunidades presenciales, híbridas, remotas e internacionales",
+      eyebrow: "Perfil técnico para oportunidades en backend y tecnología",
+      availability: "Disponible para oportunidades presenciales, híbridas, remotas e internacionales.",
       systemTitle: "Sistema de presentación",
-      systemSubtitle: "Backend, datos y soporte conectados en proyectos.",
-      systemModules: ["Perfil", "Habilidades", "Proyectos", "Arquitectura", "Contacto"],
+      systemSubtitle: "Backend, datos y experiencia práctica conectados en proyectos.",
+      systemModules: ["Perfil", "Habilidades", "Proyectos", "Arquitectura", "Experiencia"],
     },
     sections: {
       about: {
         eyebrow: "Quién soy",
-        title: "Backend junior con base técnica y experiencia corporativa",
+        title: "Backend con base técnica, visión de proceso y experiencia corporativa",
         description:
-          "Mi perfil conecta formación en ADS, proyectos con backend y bases de datos, y experiencia real en soporte operacional.",
+          "Mi base combina desarrollo de software con experiencia real en soporte técnico, operaciones, atención a usuarios y seguimiento de procesos.",
       },
       skills: {
         eyebrow: "Stack y fundamentos",
-        title: "Habilidades técnicas aplicadas en proyectos",
+        title: "Habilidades técnicas aplicadas en proyectos y experiencia práctica",
         description:
-          "Organizo mis conocimientos por bloques para mostrar qué ya apliqué, qué practico y qué sigo fortaleciendo.",
+          "Organizo mis habilidades por bloques para mostrar tecnologías, fundamentos y herramientas que ya utilicé en proyectos, práctica académica y experiencia profesional.",
       },
       projects: {
-        eyebrow: "Evidencia práctica",
-        title: "Proyectos con backend, datos y entrega visible",
+        eyebrow: "Proyectos destacados",
+        title: "Backend, datos y construcción práctica de soluciones",
         description:
-          "Cada proyecto muestra el problema trabajado, las decisiones técnicas y lo que implementé durante la construcción.",
+          "Cada proyecto representa una parte importante de mi desarrollo técnico: backend, modelado de datos, autenticación, organización de módulos, documentación y presentación de soluciones.",
       },
       architecture: {
-        eyebrow: "Pensamiento técnico",
+        eyebrow: "Arquitectura",
         title: "Cómo organizo un sistema",
         description:
-          "Me interesa entender responsabilidades, datos, backend, reglas de negocio, APIs, interfaz y despliegue como partes conectadas.",
+          "Me interesa entender y organizar un sistema como un conjunto de partes conectadas: backend, datos, reglas de negocio, APIs, interfaz, deploy y evolución continua.",
       },
       education: {
         eyebrow: "Formación",
-        title: "Estudios y aprendizaje continuo",
+        title: "Formación y aprendizaje continuo",
         description:
-          "Base académica en Análisis y Desarrollo de Sistemas, complementada con práctica y cursos técnicos.",
+          "Base académica en Análisis y Desarrollo de Sistemas, complementada con práctica, proyectos propios y cursos técnicos.",
       },
       experience: {
-        eyebrow: "Experiencia",
-        title: "Soporte operacional en ambiente corporativo",
+        eyebrow: "Experiencia profesional",
+        title: "Soporte técnico, operación y contacto con problemas reales",
         description:
-          "La experiencia profesional aporta criterio para entender usuarios, procesos, información y problemas reales antes de construir soluciones.",
+          "Mi experiencia profesional fortalece mi visión de tecnología, análisis de contexto, comunicación y resolución de problemas.",
       },
       contact: {
         eyebrow: "Contacto",
         title: "Hablemos de una oportunidad",
         description:
-          "Estoy disponible para oportunidades presenciales, híbridas, remotas e internacionales en desarrollo y TI.",
+          "Estoy disponible para oportunidades presenciales, híbridas, remotas e internacionales en desarrollo y tecnología.",
       },
     },
     architecture: {
-      flowTitle: "Flujo mental de construcción",
+      flowTitle: "Mi flujo de construcción",
       items: [
         {
           title: "Backend",
-          description: "Módulos, APIs REST, autenticación, reglas de negocio y responsabilidades claras.",
+          description: "Definición de módulos, entidades, APIs REST, autenticación, validaciones y reglas de negocio.",
         },
         {
           title: "Base de datos",
-          description: "Modelado de entidades, relaciones, persistencia y control de datos.",
+          description: "Modelado de entidades, relaciones, persistencia y consistencia de datos.",
         },
         {
-          title: "Frontend",
-          description: "Interfaz, componentes, experiencia de usuario y consumo de datos.",
+          title: "Interfaz y consumo",
+          description: "Construcción de la interfaz, consumo de API y organización de la experiencia del usuario.",
         },
         {
-          title: "Deploy",
-          description: "Versionado, publicación, ambientes y evolución continua del proyecto.",
+          title: "Deploy y evolución",
+          description: "Versionado, documentación, publicación y mejora continua de la solución.",
         },
       ],
     },
@@ -192,76 +194,77 @@ export const translations: Record<Language, TranslationContent> = {
       viewGithub: "GitHub",
       viewLive: "Demo",
       sendMessage: "Enviar mensagem",
+      viewDetails: "Ver detalhes",
     },
     hero: {
-      eyebrow: "Perfil técnico para oportunidades junior",
-      availability: "Disponível para oportunidades presenciais, híbridas, remotas e internacionais",
+      eyebrow: "Perfil técnico para oportunidades em backend e tecnologia",
+      availability: "Disponível para oportunidades presenciais, híbridas, remotas e internacionais.",
       systemTitle: "Sistema de apresentação",
-      systemSubtitle: "Backend, dados e suporte conectados em projetos.",
-      systemModules: ["Perfil", "Habilidades", "Projetos", "Arquitetura", "Contato"],
+      systemSubtitle: "Backend, dados e experiência prática conectados em projetos.",
+      systemModules: ["Perfil", "Habilidades", "Projetos", "Arquitetura", "Experiência"],
     },
     sections: {
       about: {
         eyebrow: "Quem sou",
-        title: "Backend junior com base técnica e experiência corporativa",
+        title: "Backend com base técnica, visão de processo e experiência corporativa",
         description:
-          "Meu perfil conecta formação em ADS, projetos com backend e banco de dados, e experiência real em suporte operacional.",
+          "Minha base combina desenvolvimento de software com experiência real em suporte técnico, operações, atendimento a usuários e acompanhamento de processos.",
       },
       skills: {
         eyebrow: "Stack e fundamentos",
-        title: "Habilidades técnicas aplicadas em projetos",
+        title: "Habilidades técnicas aplicadas em projetos e experiência prática",
         description:
-          "Organizo meus conhecimentos por blocos para mostrar o que já apliquei, o que pratico e o que sigo fortalecendo.",
+          "Organizo minhas habilidades por blocos para mostrar tecnologias, fundamentos e ferramentas que já utilizei em projetos, prática acadêmica e experiência profissional.",
       },
       projects: {
-        eyebrow: "Evidência prática",
-        title: "Projetos com backend, dados e entrega visível",
+        eyebrow: "Projetos em destaque",
+        title: "Backend, dados e construção prática de soluções",
         description:
-          "Cada projeto mostra o problema trabalhado, as decisões técnicas e o que implementei durante a construção.",
+          "Cada projeto representa uma parte importante do meu desenvolvimento técnico: backend, modelagem de dados, autenticação, organização de módulos, documentação e apresentação de soluções.",
       },
       architecture: {
-        eyebrow: "Pensamento técnico",
+        eyebrow: "Arquitetura",
         title: "Como organizo um sistema",
         description:
-          "Tenho interesse em entender responsabilidades, dados, backend, regras de negócio, APIs, interface e deploy como partes conectadas.",
+          "Tenho interesse em entender e organizar um sistema como um conjunto de partes conectadas: backend, dados, regras de negócio, APIs, interface, deploy e evolução contínua.",
       },
       education: {
         eyebrow: "Formação",
-        title: "Estudos e aprendizado contínuo",
+        title: "Formação e aprendizado contínuo",
         description:
-          "Base acadêmica em Análise e Desenvolvimento de Sistemas, complementada por prática e cursos técnicos.",
+          "Base acadêmica em Análise e Desenvolvimento de Sistemas, complementada por prática, projetos próprios e cursos técnicos.",
       },
       experience: {
-        eyebrow: "Experiência",
-        title: "Suporte operacional em ambiente corporativo",
+        eyebrow: "Experiência profissional",
+        title: "Suporte técnico, operação e contato com problemas reais",
         description:
-          "A experiência profissional traz critério para entender usuários, processos, informações e problemas reais antes de construir soluções.",
+          "Minha experiência profissional fortalece minha visão de tecnologia, análise de contexto, comunicação e resolução de problemas.",
       },
       contact: {
         eyebrow: "Contato",
         title: "Vamos conversar sobre uma oportunidade",
         description:
-          "Estou disponível para oportunidades presenciais, híbridas, remotas e internacionais em desenvolvimento e TI.",
+          "Estou disponível para oportunidades presenciais, híbridas, remotas e internacionais em desenvolvimento e tecnologia.",
       },
     },
     architecture: {
-      flowTitle: "Fluxo mental de construção",
+      flowTitle: "Meu fluxo de construção",
       items: [
         {
           title: "Backend",
-          description: "Módulos, APIs REST, autenticação, regras de negócio e responsabilidades claras.",
+          description: "Definição de módulos, entidades, APIs REST, autenticação, validações e regras de negócio.",
         },
         {
           title: "Banco de dados",
-          description: "Modelagem de entidades, relações, persistência e controle de dados.",
+          description: "Modelagem de entidades, relacionamentos, persistência e consistência de dados.",
         },
         {
-          title: "Frontend",
-          description: "Interface, componentes, experiência do usuário e consumo de dados.",
+          title: "Interface e consumo",
+          description: "Construção da interface, consumo de API e organização da experiência do usuário.",
         },
         {
-          title: "Deploy",
-          description: "Versionamento, publicação, ambientes e evolução contínua do projeto.",
+          title: "Deploy e evolução",
+          description: "Versionamento, documentação, publicação e melhoria contínua da solução.",
         },
       ],
     },
@@ -300,76 +303,77 @@ export const translations: Record<Language, TranslationContent> = {
       viewGithub: "GitHub",
       viewLive: "Demo",
       sendMessage: "Send message",
+      viewDetails: "View details",
     },
     hero: {
-      eyebrow: "Technical profile for junior opportunities",
+      eyebrow: "Technical profile for backend and technology opportunities",
       availability: "Available for on-site, hybrid, remote, and international opportunities",
       systemTitle: "Presentation system",
-      systemSubtitle: "Backend, data, and support connected through projects.",
-      systemModules: ["Profile", "Skills", "Projects", "Architecture", "Contact"],
+      systemSubtitle: "Backend, data, and practical experience connected through projects.",
+      systemModules: ["Profile", "Skills", "Projects", "Architecture", "Experience"],
     },
     sections: {
       about: {
         eyebrow: "Who I am",
-        title: "Junior backend profile with technical foundations and corporate experience",
+        title: "Backend with technical foundations, process vision, and corporate experience",
         description:
-          "My profile connects ADS education, backend and database projects, and real experience in operational support.",
+          "My foundation combines software development with real experience in technical support, operations, user service, and process follow-up.",
       },
       skills: {
         eyebrow: "Stack and fundamentals",
-        title: "Technical skills applied in projects",
+        title: "Technical skills applied in projects and practical experience",
         description:
-          "I organize my knowledge by blocks to show what I have applied, what I practice, and what I keep strengthening.",
+          "I organize my skills by blocks to show technologies, fundamentals, and tools I have used in projects, academic practice, and professional experience.",
       },
       projects: {
-        eyebrow: "Practical evidence",
-        title: "Projects with backend, data, and visible delivery",
+        eyebrow: "Featured projects",
+        title: "Backend, data, and practical solution building",
         description:
-          "Each project shows the problem worked on, technical decisions, and what I implemented during the build.",
+          "Each project represents an important part of my technical development: backend, data modeling, authentication, module organization, documentation, and solution presentation.",
       },
       architecture: {
-        eyebrow: "Technical thinking",
+        eyebrow: "Architecture",
         title: "How I organize a system",
         description:
-          "I care about understanding responsibilities, data, backend, business rules, APIs, interface, and deployment as connected parts.",
+          "I care about understanding and organizing a system as connected parts: backend, data, business rules, APIs, interface, deployment, and continuous evolution.",
       },
       education: {
         eyebrow: "Education",
-        title: "Studies and continuous learning",
+        title: "Education and continuous learning",
         description:
-          "Academic foundation in Systems Analysis and Development, complemented by practice and technical courses.",
+          "Academic foundation in Systems Analysis and Development, complemented by practice, personal projects, and technical courses.",
       },
       experience: {
-        eyebrow: "Experience",
-        title: "Operational support in a corporate environment",
+        eyebrow: "Professional experience",
+        title: "Technical support, operations, and contact with real problems",
         description:
-          "Professional experience builds judgment for understanding users, processes, information, and real problems before building solutions.",
+          "My professional experience strengthens my technology perspective, context analysis, communication, and problem solving.",
       },
       contact: {
         eyebrow: "Contact",
         title: "Let us talk about an opportunity",
         description:
-          "I am available for on-site, hybrid, remote, and international opportunities in development and IT.",
+          "I am available for on-site, hybrid, remote, and international opportunities in development and technology.",
       },
     },
     architecture: {
-      flowTitle: "System building thought flow",
+      flowTitle: "My building flow",
       items: [
         {
           title: "Backend",
-          description: "Modules, REST APIs, authentication, business rules, and clear responsibilities.",
+          description: "Definition of modules, entities, REST APIs, authentication, validations, and business rules.",
         },
         {
           title: "Database",
-          description: "Entity modeling, relationships, persistence, and data control.",
+          description: "Entity modeling, relationships, persistence, and data consistency.",
         },
         {
-          title: "Frontend",
-          description: "Interface, components, user experience, and data consumption.",
+          title: "Interface and consumption",
+          description: "Interface building, API consumption, and organization of the user experience.",
         },
         {
-          title: "Deploy",
-          description: "Versioning, publishing, environments, and continuous project evolution.",
+          title: "Deploy and evolution",
+          description: "Versioning, documentation, publishing, and continuous solution improvement.",
         },
       ],
     },

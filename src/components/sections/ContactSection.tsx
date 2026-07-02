@@ -42,6 +42,22 @@ export function ContactSection({ language, labels }: ContactSectionProps) {
             </p>
             <p className="mt-2 text-ink/72">{profile.contact.availability[language]}</p>
           </div>
+          <div>
+            <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-signal">
+              {profile.opportunities.title[language]}
+            </p>
+            <p className="mt-2 text-ink/72">{profile.opportunities.description[language]}</p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {profile.opportunities.roles.map((role) => (
+                <li
+                  className="rounded-md border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-ink/72"
+                  key={role[language]}
+                >
+                  {role[language]}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="flex flex-wrap gap-3">
             {profile.contact.links.map((link) =>
               link.href ? (

@@ -17,8 +17,8 @@ type DiagramShowcase = {
 
 export const diagramShowcase: DiagramShowcase = {
   eyebrow: {
-    es: "Documentacion visual",
-    pt: "Documentacao visual",
+    es: "Documentación y apoyo visual",
+    pt: "Documentação e apoio visual",
     en: "Visual documentation",
   },
   title: {
@@ -27,9 +27,9 @@ export const diagramShowcase: DiagramShowcase = {
     en: "Diagrams I use to design and explain systems",
   },
   description: {
-    es: "Trabajo con recursos visuales para modelar estructuras, describir flujos y comunicar requisitos de forma clara.",
-    pt: "Trabalho com recursos visuais para modelar estruturas, descrever fluxos e comunicar requisitos com clareza.",
-    en: "I work with visual artifacts to model structures, describe flows, and communicate requirements clearly.",
+    es: "Uso recursos visuales y documentación para organizar mejor ideas, flujos y estructura de sistemas.",
+    pt: "Utilizo recursos visuais e documentação para organizar melhor ideias, fluxos e estrutura de sistemas.",
+    en: "I use visual resources and documentation to better organize ideas, flows, and system structure.",
   },
   items: [
     {
@@ -41,12 +41,12 @@ export const diagramShowcase: DiagramShowcase = {
       },
       title: {
         es: "Modelado de estructura y relaciones",
-        pt: "Modelagem de estrutura e relacoes",
+        pt: "Modelagem de estrutura e relações",
         en: "Structure and relationship modeling",
       },
       description: {
-        es: "Lo uso para representar clases, entidades, modulos y relaciones entre las partes del sistema.",
-        pt: "Uso para representar classes, entidades, modulos e relacoes entre as partes do sistema.",
+        es: "Lo uso para representar entidades, módulos y relaciones entre las partes del sistema.",
+        pt: "Uso para representar entidades, módulos e relações entre as partes do sistema.",
         en: "I use it to represent classes, entities, modules, and relationships between system parts.",
       },
     },
@@ -59,12 +59,12 @@ export const diagramShowcase: DiagramShowcase = {
       },
       title: {
         es: "Fluxogramas para procesos y decisiones",
-        pt: "Fluxogramas para processos e decisoes",
+        pt: "Fluxogramas para processos e decisões",
         en: "Flowcharts for process and decision paths",
       },
       description: {
-        es: "Me ayudan a mapear etapas, validaciones, bifurcaciones y comportamiento esperado antes de implementar.",
-        pt: "Ajudam a mapear etapas, validacoes, bifurcacoes e comportamento esperado antes da implementacao.",
+        es: "Me ayudan a mapear procesos, decisiones, validaciones y comportamiento esperado antes de implementar.",
+        pt: "Ajudam a mapear processos, decisões, validações e comportamento esperado antes da implementação.",
         en: "They help me map steps, validations, branches, and expected behavior before implementation.",
       },
     },
@@ -81,8 +81,8 @@ export const diagramShowcase: DiagramShowcase = {
         en: "Actors, goals, and functional scope",
       },
       description: {
-        es: "Los uso para identificar interacciones clave, necesidades del usuario y limites de una solucion.",
-        pt: "Uso para identificar interacoes principais, necessidades do usuario e limites de uma solucao.",
+        es: "Los uso para identificar actores, objetivos y alcance funcional de una solución.",
+        pt: "Uso para identificar atores, objetivos e escopo funcional de uma solução.",
         en: "I use them to identify key interactions, user needs, and solution boundaries.",
       },
     },

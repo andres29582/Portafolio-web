@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/Card";
+import { DetailsToggle } from "@/components/ui/DetailsToggle";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { profile } from "@/data/profile";
 import type { TranslationContent } from "@/data/translations";
@@ -17,7 +18,7 @@ export function ExperienceSection({ language, labels }: ExperienceSectionProps) 
       <div className="mt-10 grid gap-5">
         {profile.experience.map((item) => (
           <Card key={item.title[language]}>
-            <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+            <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
               <div>
                 <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-amber">
                   {item.period[language]}
@@ -28,17 +29,19 @@ export function ExperienceSection({ language, labels }: ExperienceSectionProps) 
               <div>
                 <p className="leading-7 text-ink/72">{item.description[language]}</p>
                 {item.highlights ? (
-                  <ul className="mt-5 grid gap-3">
-                    {item.highlights.map((highlight) => (
-                      <li
-                        className="flex gap-3 text-sm leading-6 text-ink/70"
-                        key={highlight[language]}
-                      >
-                        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-signal" />
-                        <span>{highlight[language]}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <DetailsToggle className="mt-5" label={labels.actions.viewDetails}>
+                    <ul className="grid gap-3">
+                      {item.highlights.map((highlight) => (
+                        <li
+                          className="flex gap-3 text-sm leading-6 text-ink/70"
+                          key={highlight[language]}
+                        >
+                          <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-signal" />
+                          <span>{highlight[language]}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </DetailsToggle>
                 ) : null}
               </div>
             </div>

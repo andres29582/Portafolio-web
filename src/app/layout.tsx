@@ -13,9 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Andrés Eduardo Pignoloni Vasquez | Backend Junior e Suporte TI",
+  title: "Andrés Eduardo Pignoloni Vasquez | Desenvolvedor Backend",
   description:
-    "Portfólio de Andrés Eduardo Pignoloni Vasquez, desenvolvedor backend junior e suporte TI com projetos em TypeScript, NestJS, PostgreSQL, APIs REST, React Native e Next.js.",
+    "Portfólio de Andrés Eduardo Pignoloni Vasquez, desenvolvedor backend com projetos em TypeScript, NestJS, PostgreSQL, APIs REST, React Native, Next.js e experiência corporativa em tecnologia.",
 };
 
 export default function RootLayout({

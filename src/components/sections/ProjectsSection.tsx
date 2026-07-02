@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { DetailsToggle } from "@/components/ui/DetailsToggle";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
 import type { TranslationContent } from "@/data/translations";
@@ -15,30 +16,19 @@ export function ProjectsSection({ language, labels }: ProjectsSectionProps) {
     <section className="section-shell" id="projects">
       <SectionTitle {...labels.sections.projects} />
 
-      <div className="mt-10 grid gap-6">
+      <div className="mt-10 grid gap-5 lg:grid-cols-2">
         {projects.map((project) => {
           const projectHref = project.githubUrl ?? project.liveUrl;
 
           return (
             <Card
-              className={`relative grid gap-6 transition lg:grid-cols-[0.9fr_1.1fr] ${
+              className={`grid content-start gap-5 transition ${
                 projectHref
                   ? "group hover:-translate-y-1 hover:border-signal hover:shadow-[0_22px_70px_rgba(21,127,98,0.18)]"
                   : ""
               }`}
               key={project.id}
             >
-              {projectHref ? (
-                <a
-                  aria-label={`${labels.actions.viewGithub}: ${project.name[language]}`}
-                  className="focus-ring absolute inset-0 z-10 rounded-lg"
-                  href={projectHref}
-                  rel="noreferrer"
-                  target="_blank"
-                />
-              ) : null}
-
-            <div className="relative z-0">
               <div className="flex flex-wrap items-center gap-3">
                 <h3
                   className={`text-2xl font-bold text-ink ${
@@ -51,9 +41,9 @@ export function ProjectsSection({ language, labels }: ProjectsSectionProps) {
                   {project.statusLabel[language]}
                 </span>
               </div>
-              <p className="mt-4 leading-7 text-ink/72">{project.description[language]}</p>
+              <p className="leading-7 text-ink/72">{project.description[language]}</p>
 
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <span
                     className="rounded-md border border-line bg-paper px-3 py-1.5 font-mono text-xs font-semibold text-ink/74"
@@ -63,22 +53,25 @@ export function ProjectsSection({ language, labels }: ProjectsSectionProps) {
                   </span>
                 ))}
               </div>
-            </div>
 
-            <div className="relative z-0 grid gap-4">
-              <div>
-                <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-amber">
-                  {labels.labels.problem}
-                </p>
-                <p className="mt-2 leading-7 text-ink/72">{project.problem[language]}</p>
-              </div>
-              <div>
-                <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-berry">
-                  {labels.labels.learned}
-                </p>
-                <p className="mt-2 leading-7 text-ink/72">{project.learnings[language]}</p>
-              </div>
-              <div className="relative z-20 flex flex-wrap gap-3">
+              <DetailsToggle label={labels.actions.viewDetails}>
+                <div className="grid gap-4">
+                  <div>
+                    <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-amber">
+                      {labels.labels.problem}
+                    </p>
+                    <p className="mt-2 leading-7 text-ink/72">{project.problem[language]}</p>
+                  </div>
+                  <div>
+                    <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-berry">
+                      {labels.labels.learned}
+                    </p>
+                    <p className="mt-2 leading-7 text-ink/72">{project.learnings[language]}</p>
+                  </div>
+                </div>
+              </DetailsToggle>
+
+              <div className="flex flex-wrap gap-3">
                 {project.githubUrl ? (
                   <Button external href={project.githubUrl} variant="secondary">
                     {labels.actions.viewGithub}
@@ -90,8 +83,7 @@ export function ProjectsSection({ language, labels }: ProjectsSectionProps) {
                   </Button>
                 ) : null}
               </div>
-            </div>
-          </Card>
+            </Card>
           );
         })}
       </div>

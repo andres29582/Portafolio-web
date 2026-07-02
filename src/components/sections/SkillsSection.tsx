@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/Card";
+import { DetailsToggle } from "@/components/ui/DetailsToggle";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { skills } from "@/data/skills";
 import type { TranslationContent } from "@/data/translations";
@@ -22,24 +23,45 @@ export function SkillsSection({ language, labels }: SkillsSectionProps) {
       <SectionTitle {...labels.sections.skills} />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
-        {skills.map((group) => (
-          <Card key={group.id}>
-            <h3 className="text-xl font-bold text-ink">{group.title[language]}</h3>
-            <p className="mt-2 text-sm leading-6 text-ink/66">{group.description[language]}</p>
+        {skills.map((group) => {
+          const visibleSkills = group.items.slice(0, 5);
+          const detailSkills = group.items.slice(5);
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {group.items.map((skill) => (
-                <span
-                  className={`rounded-md border px-3 py-2 text-sm font-semibold ${levelClasses[skill.level]}`}
-                  key={skill.name}
-                  title={labels.skillLevels[skill.level]}
-                >
-                  {skill.name}
-                </span>
-              ))}
-            </div>
-          </Card>
-        ))}
+          return (
+            <Card className="content-start" key={group.id}>
+              <h3 className="text-xl font-bold text-ink">{group.title[language]}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink/66">{group.description[language]}</p>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {visibleSkills.map((skill) => (
+                  <span
+                    className={`rounded-md border px-3 py-2 text-sm font-semibold ${levelClasses[skill.level]}`}
+                    key={skill.name}
+                    title={labels.skillLevels[skill.level]}
+                  >
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
+
+              {detailSkills.length > 0 ? (
+                <DetailsToggle className="mt-4" label={labels.actions.viewDetails}>
+                  <div className="flex flex-wrap gap-2">
+                    {detailSkills.map((skill) => (
+                      <span
+                        className={`rounded-md border px-3 py-2 text-sm font-semibold ${levelClasses[skill.level]}`}
+                        key={skill.name}
+                        title={labels.skillLevels[skill.level]}
+                      >
+                        {skill.name}
+                      </span>
+                    ))}
+                  </div>
+                </DetailsToggle>
+              ) : null}
+            </Card>
+          );
+        })}
       </div>
     </section>
   );
