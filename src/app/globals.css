@@ -1,6 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-ink: #17201a;
+  --color-paper: #f6f8f4;
+  --color-line: #d8ded5;
+  --color-signal: #157f62;
+  --color-amber-*: initial;
+  --color-amber: #c47a1c;
+  --color-berry: #9f3a55;
+
+  --shadow-soft: 0 18px 60px rgba(23, 32, 26, 0.1);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .bg-paper\/92,
+  .bg-white\/7,
+  .bg-white\/76,
+  .bg-white\/8,
+  .bg-white\/86:not(.bg-ink) {
+    background-color: transparent;
+  }
+
+  .bg-white\/86.bg-ink {
+    background-color: var(--color-ink);
+  }
+
+  .border-white\/12,
+  .border-white\/14,
+  .border-white\/16 {
+    border-color: #e5e7eb;
+  }
+
+  .text-ink\/62,
+  .text-ink\/64,
+  .text-ink\/66,
+  .text-ink\/68,
+  .text-ink\/72,
+  .text-ink\/74,
+  .text-ink\/78,
+  .text-ink\/82,
+  .text-white\/72 {
+    color: inherit;
+  }
+}
 
 :root {
   color-scheme: light;
@@ -48,4 +99,8 @@ a {
 
 .focus-ring:focus-visible {
   outline-color: #157f62;
+}
+
+.focus-ring.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 }
