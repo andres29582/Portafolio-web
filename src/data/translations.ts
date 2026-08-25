@@ -61,6 +61,9 @@ export type TranslationContent = {
     availability: string;
     email: string;
     pendingLink: string;
+    openNavigation: string;
+    closeNavigation: string;
+    mobileNavigation: string;
   };
   skillLevels: Record<"learning" | "practicing" | "applied", string>;
   footer: string;
@@ -168,6 +171,9 @@ export const translations: Record<Language, TranslationContent> = {
       availability: "Disponibilidad",
       email: "Email",
       pendingLink: "Link pendiente",
+      openNavigation: "Abrir navegación",
+      closeNavigation: "Cerrar navegación",
+      mobileNavigation: "Navegación móvil",
     },
     skillLevels: {
       learning: "Fortaleciendo",
@@ -277,6 +283,9 @@ export const translations: Record<Language, TranslationContent> = {
       availability: "Disponibilidade",
       email: "Email",
       pendingLink: "Link pendente",
+      openNavigation: "Abrir navegação",
+      closeNavigation: "Fechar navegação",
+      mobileNavigation: "Navegação móvel",
     },
     skillLevels: {
       learning: "Fortalecendo",
@@ -386,6 +395,9 @@ export const translations: Record<Language, TranslationContent> = {
       availability: "Availability",
       email: "Email",
       pendingLink: "Pending link",
+      openNavigation: "Open navigation",
+      closeNavigation: "Close navigation",
+      mobileNavigation: "Mobile navigation",
     },
     skillLevels: {
       learning: "Strengthening",
