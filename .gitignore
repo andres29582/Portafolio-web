@@ -10,6 +10,8 @@ dev-server.log
 dev-server.err.log
 tsconfig.tsbuildinfo
 .docx-render/
+playwright-report/
+test-results/
 
 npm-debug.log*
 yarn-debug.log*
