@@ -1,0 +1,41 @@
+name: Generate Linux visual snapshots
+
+on:
+  push:
+    branches:
+      - test/browser-baseline
+
+permissions:
+  contents: read
+
+jobs:
+  generate-snapshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+
+    env:
+      CI: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Generate Linux visual snapshots
+        run: npx playwright test tests/browser/visual.spec.ts --update-snapshots
+
+      - name: Upload Linux snapshots
+        uses: actions/upload-artifact@v5
+        with:
+          name: playwright-linux-snapshots
+          path: tests/browser/visual.spec.ts-snapshots/linux/
+          if-no-files-found: error
+          retention-days: 7
