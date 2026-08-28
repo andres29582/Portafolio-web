@@ -75,12 +75,13 @@ test("changes and persists the selected language", async ({ page }) => {
   await expect(page.getByRole("button", { name: "Open navigation" })).toBeVisible();
 });
 
-test("opens a project disclosure", async ({ page }) => {
-  const disclosure = page.locator("#projects details").first();
-
-  await disclosure.getByText("Ver detalhes", { exact: true }).click();
-
-  await expect(disclosure).toHaveAttribute("open", "");
+test("keeps only experience details and shows other content", async ({ page }) => {
+  await expect(page.locator("#projects details, #architecture details, #skills details")).toHaveCount(
+    0,
+  );
+  await expect(page.locator("#experience details")).toHaveCount(1);
+  await expect(page.locator("#projects").getByText("Objetivo", { exact: true }).first()).toBeVisible();
+  await expect(page.locator("#skills").getByText("HTML", { exact: true })).toBeVisible();
 });
 
 test("navigates through page anchors", async ({ page }) => {
@@ -95,7 +96,7 @@ test("downloads the CV with the expected filename", async ({ page }) => {
   await page.getByRole("link", { name: "Baixar CV" }).click();
   const download = await downloadPromise;
 
-  expect(download.suggestedFilename()).toBe("cv-andres-pignoloni.docx");
+  expect(download.suggestedFilename()).toBe("cv-andres-pignoloni.pdf");
 });
 
 test("exposes email and external contact links", async ({ page }) => {
