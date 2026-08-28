@@ -12,6 +12,7 @@ tsconfig.tsbuildinfo
 .docx-render/
 playwright-report/
 test-results/
+tests/browser/visual.spec.ts-snapshots/linux/
 
 npm-debug.log*
 yarn-debug.log*
