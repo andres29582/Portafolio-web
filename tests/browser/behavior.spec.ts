@@ -51,9 +51,20 @@ test("closes the mobile menu after selecting an anchor", async ({ page }) => {
 });
 
 test("changes and persists the selected language", async ({ page }) => {
+  await expect(page.locator("html")).toHaveAttribute("lang", "pt-BR");
+  await expect(page.locator('nav[aria-label="Navegação principal"]')).toHaveCount(1);
+  await expect(page.getByRole("group", { name: "Seletor de idioma" })).toBeVisible();
+
+  await page.getByRole("button", { name: "ES", exact: true }).click();
+  await expect(page.locator("html")).toHaveAttribute("lang", "es");
+  await expect(page.locator('nav[aria-label="Navegación principal"]')).toHaveCount(1);
+  await expect(page.getByRole("group", { name: "Selector de idioma" })).toBeVisible();
+
   await page.getByRole("button", { name: "EN", exact: true }).click();
 
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await expect(page.locator('nav[aria-label="Main navigation"]')).toHaveCount(1);
+  await expect(page.getByRole("group", { name: "Language selector" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Open navigation" })).toBeVisible();
   await expect
     .poll(() => page.evaluate((key) => window.localStorage.getItem(key), LANGUAGE_STORAGE_KEY))

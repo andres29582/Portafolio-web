@@ -31,7 +31,7 @@ export function PortfolioHome() {
 
   useEffect(() => {
     window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
-    document.documentElement.lang = language;
+    document.documentElement.lang = language === "pt" ? "pt-BR" : language;
   }, [language]);
 
   const labels = translations[language];

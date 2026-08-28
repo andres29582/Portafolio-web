@@ -24,7 +24,7 @@ export function ContactSection({ language, labels }: ContactSectionProps) {
               {labels.labels.email}
             </p>
             <a
-              className="mt-2 inline-flex text-lg font-bold text-ink hover:text-signal"
+              className="focus-ring mt-2 inline-flex rounded-md text-lg font-bold text-ink hover:text-signal"
               href={mailtoHref}
             >
               {profile.contact.email}

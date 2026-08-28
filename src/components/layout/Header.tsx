@@ -39,7 +39,7 @@ export function Header({ language, labels, onLanguageChange }: HeaderProps) {
           AEPV.dev
         </a>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label={labels.labels.mainNavigation}>
           {navItems.map((item) => (
             <a
               className="focus-ring rounded-md px-3 py-2 text-sm font-medium text-ink/72 transition hover:bg-white hover:text-ink"
@@ -55,7 +55,7 @@ export function Header({ language, labels, onLanguageChange }: HeaderProps) {
           aria-controls="mobile-navigation"
           aria-expanded={isMenuOpen}
           aria-label={isMenuOpen ? labels.labels.closeNavigation : labels.labels.openNavigation}
-          className="focus-ring ml-auto flex min-h-9 min-w-9 items-center justify-center rounded-md text-ink lg:hidden"
+          className="focus-ring ml-auto flex min-h-11 min-w-11 items-center justify-center rounded-md text-ink lg:hidden"
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
           ref={menuButtonRef}
           type="button"
@@ -66,7 +66,7 @@ export function Header({ language, labels, onLanguageChange }: HeaderProps) {
         </button>
 
         <div
-          aria-label="Language selector"
+          aria-label={labels.labels.languageSelector}
           className="flex rounded-md border border-line bg-white p-1"
           role="group"
         >
@@ -76,7 +76,7 @@ export function Header({ language, labels, onLanguageChange }: HeaderProps) {
             return (
               <button
                 aria-pressed={isActive}
-                className={`focus-ring min-h-9 rounded px-3 text-xs font-bold transition ${
+                className={`focus-ring min-h-11 rounded px-3 text-xs font-bold transition ${
                   isActive ? "bg-ink text-white" : "text-ink/62 hover:bg-paper hover:text-ink"
                 }`}
                 key={item.code}
