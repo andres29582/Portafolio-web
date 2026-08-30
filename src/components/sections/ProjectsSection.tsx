@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { DetailsToggle } from "@/components/ui/DetailsToggle";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
 import type { TranslationContent } from "@/data/translations";
@@ -54,22 +53,20 @@ export function ProjectsSection({ language, labels }: ProjectsSectionProps) {
                 ))}
               </div>
 
-              <DetailsToggle label={labels.actions.viewDetails}>
-                <div className="grid gap-4">
-                  <div>
-                    <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-amber">
-                      {labels.labels.problem}
-                    </p>
-                    <p className="mt-2 leading-7 text-ink/72">{project.problem[language]}</p>
-                  </div>
-                  <div>
-                    <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-berry">
-                      {labels.labels.learned}
-                    </p>
-                    <p className="mt-2 leading-7 text-ink/72">{project.learnings[language]}</p>
-                  </div>
+              <div className="grid gap-4">
+                <div>
+                  <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-amber">
+                    {labels.labels.problem}
+                  </p>
+                  <p className="mt-2 leading-7 text-ink/72">{project.problem[language]}</p>
                 </div>
-              </DetailsToggle>
+                <div>
+                  <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-berry">
+                    {labels.labels.learned}
+                  </p>
+                  <p className="mt-2 leading-7 text-ink/72">{project.learnings[language]}</p>
+                </div>
+              </div>
 
               <div className="flex flex-wrap gap-3">
                 {project.githubUrl ? (

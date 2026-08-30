@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/Card";
-import { DetailsToggle } from "@/components/ui/DetailsToggle";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { getDiagramShowcase } from "@/data/diagrams";
 import type { TranslationContent } from "@/data/translations";
@@ -33,7 +32,7 @@ export function ArchitectureSection({ language, labels }: ArchitectureSectionPro
             ))}
           </div>
 
-          <DetailsToggle className="mt-6" label={labels.actions.viewDetails}>
+          <div className="mt-6">
             <div className="grid gap-4">
               {labels.architecture.items.map((item) => (
                 <div className="rounded-md border border-white/12 bg-white/8 p-4" key={item.title}>
@@ -42,7 +41,7 @@ export function ArchitectureSection({ language, labels }: ArchitectureSectionPro
                 </div>
               ))}
             </div>
-          </DetailsToggle>
+          </div>
         </Card>
 
         <div className="rounded-lg border border-line bg-white/76 p-6">
@@ -63,7 +62,7 @@ export function ArchitectureSection({ language, labels }: ArchitectureSectionPro
             ))}
           </div>
 
-          <DetailsToggle className="mt-6" label={labels.actions.viewDetails}>
+          <div className="mt-6">
             <div className="grid gap-4 md:grid-cols-3">
               {diagramShowcase.items.map((item) => (
                 <div className="rounded-md border border-line bg-paper p-4" key={item.id}>
@@ -75,7 +74,7 @@ export function ArchitectureSection({ language, labels }: ArchitectureSectionPro
                 </div>
               ))}
             </div>
-          </DetailsToggle>
+          </div>
         </div>
       </div>
     </section>
